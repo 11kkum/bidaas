@@ -1,0 +1,12 @@
+{
+  "name": "erc20_bidaas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:11kkum/bidaas.git",
+  "author": "11kkum <kikuchi.atsushi@lev.co.jp>",
+  "license": "MIT",
+  "dependencies": {
+    "@ethereumjs/tx": "^3.2.0",
+    "ethereumjs-util": "^7.0.10"
+  }
+}
