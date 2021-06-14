@@ -7,6 +7,9 @@
   "license": "MIT",
   "dependencies": {
     "@ethereumjs/tx": "^3.2.0",
-    "ethereumjs-util": "^7.0.10"
+    "ethereum-private-key-to-address": "^0.0.7",
+    "ethereum-public-key-to-address": "^0.0.5",
+    "ethereumjs-util": "^7.0.10",
+    "ethereumjs-wallet": "^1.0.1"
   }
 }

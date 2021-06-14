@@ -6,7 +6,8 @@
 !.vscode/launch.json
 !.vscode/extensions.json
 ### Eclipse template
-
+ganache-keys.json
+extract_pub_key.txt
 .metadata
 tmp/
 *.tmp
