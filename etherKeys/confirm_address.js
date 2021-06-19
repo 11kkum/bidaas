@@ -1,5 +1,9 @@
 const privateKeyToAddress = require('ethereum-private-key-to-address')
+const privateKeyToPublicKey = require('ethereum-private-key-to-public-key')
 
-// console.log(privateKeyToAddress(Buffer.from('', 'hex'))) //
-// console.log(privateKeyToAddress('')) //
-console.log(privateKeyToAddress('')) //
+const priKey = ''
+
+console.log("public key")
+console.log(privateKeyToPublicKey(priKey).toString('hex'))
+console.log("address")
+console.log(privateKeyToAddress(priKey))

@@ -281,6 +281,14 @@ ethereum-private-key-to-public-key@0.0.2:
     meow "^5.0.0"
     secp256k1 "^3.7.1"
 
+ethereum-private-key-to-public-key@^0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/ethereum-private-key-to-public-key/-/ethereum-private-key-to-public-key-0.0.5.tgz#cd86f03a19cde40d4476b35dbd12b17773c1721a"
+  integrity sha512-oSdjEi3BzhG7M5D6ZKZB5zWbINRbJ5lsaROJz+RePRAn8aylm6j93uSqNvzge+kIsslbuu2tXeXgHjEZ/tweRg==
+  dependencies:
+    meow "^5.0.0"
+    secp256k1 "^4.0.2"
+
 ethereum-public-key-to-address@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/ethereum-public-key-to-address/-/ethereum-public-key-to-address-0.0.1.tgz#3f0237687d9c2217234dc5683f3eb580abf3f6ce"
