@@ -5,12 +5,19 @@
   "repository": "git@github.com:11kkum/bidaas.git",
   "author": "11kkum <kikuchi.atsushi@lev.co.jp>",
   "license": "MIT",
+  "scripts": {
+    "message": "ts-node etherKeys/encryptDecrypt.ts"
+  },
   "dependencies": {
     "@ethereumjs/tx": "^3.2.0",
+    "dotenv": "^10.0.0",
+    "eth-crypto": "^1.9.0",
     "ethereum-private-key-to-address": "^0.0.7",
     "ethereum-private-key-to-public-key": "^0.0.5",
     "ethereum-public-key-to-address": "^0.0.5",
     "ethereumjs-util": "^7.0.10",
-    "ethereumjs-wallet": "^1.0.1"
+    "ethereumjs-wallet": "^1.0.1",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.4"
   }
 }

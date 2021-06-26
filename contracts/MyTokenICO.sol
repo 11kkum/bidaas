@@ -51,6 +51,10 @@ contract MyTokenICO is ReentrancyGuard {
     return pass;
   }
 
+  function getHash(bytes memory password) public pure returns (bytes32) {
+    return keccak256(password);
+}
+
   function buyMOC(address beneficiary) public payable nonReentrant {
     uint256 weiAmount = msg.value;
     require(

@@ -18,6 +18,8 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+extract_keys.txt
+keys.json
 
 # External tool builders
 .externalToolBuilders/
