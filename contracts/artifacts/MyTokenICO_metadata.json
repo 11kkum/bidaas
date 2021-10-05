@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.0+commit.c7dfd78e"
+		"version": "0.8.1+commit.df193b15"
 	},
 	"language": "Solidity",
 	"output": {
@@ -75,6 +75,44 @@
 				"name": "buyMOC",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes",
+						"name": "password",
+						"type": "bytes"
+					}
+				],
+				"name": "getHash",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_text",
+						"type": "string"
+					}
+				],
+				"name": "hash",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
@@ -168,11 +206,11 @@
 	},
 	"sources": {
 		"contracts/MyTokenICO.sol": {
-			"keccak256": "0xc072164ba247a4549d5ed8facdb4af3c26c1e68c995d32ce8ea30d0b1293365b",
+			"keccak256": "0xeac37c7a3ef20803345af52f638f19f0e972f8915c4935651bf2191a1e9b5b59",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b1310554b5c5633d058d1cabc40e0dbd5f2c9a860ddc8748d66c953792f1d941",
-				"dweb:/ipfs/QmcMou1h5iEvPFJP1gJSjwr9VpfEicWTuUPS7FeGba94u7"
+				"bzz-raw://ffbee828b00b1cd053163e9871abd96e2ab65b82dbc8704b1c9df35184fe4bdd",
+				"dweb:/ipfs/QmUpns756dK5vMUULMmYyZZLi2q2xMciWdwaV1KjCNDJdf"
 			]
 		},
 		"security/ReentrancyGuard.sol": {
