@@ -80,25 +80,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "bytes",
-						"name": "password",
-						"type": "bytes"
-					}
-				],
-				"name": "getHash",
-				"outputs": [
-					{
-						"internalType": "bytes32",
-						"name": "",
-						"type": "bytes32"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "string",
 						"name": "_text",
 						"type": "string"
@@ -206,11 +187,11 @@
 	},
 	"sources": {
 		"contracts/MyTokenICO.sol": {
-			"keccak256": "0xeac37c7a3ef20803345af52f638f19f0e972f8915c4935651bf2191a1e9b5b59",
+			"keccak256": "0x743996164ab11cb819760672851c0181ab2192f06c156fa73ae8a0ad8284d7bf",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://ffbee828b00b1cd053163e9871abd96e2ab65b82dbc8704b1c9df35184fe4bdd",
-				"dweb:/ipfs/QmUpns756dK5vMUULMmYyZZLi2q2xMciWdwaV1KjCNDJdf"
+				"bzz-raw://4ac42187eec942881bb14698462b3d31d7bd929f84ffeb3accfd845af378f1ea",
+				"dweb:/ipfs/QmaCUZ6Em1KQEJ6SCze1mJA1zT68YVpdJR2RmCaWDpHDtj"
 			]
 		},
 		"security/ReentrancyGuard.sol": {

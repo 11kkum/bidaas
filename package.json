@@ -17,6 +17,7 @@
     "ethereum-public-key-to-address": "^0.0.5",
     "ethereumjs-util": "^7.0.10",
     "ethereumjs-wallet": "^1.0.1",
+    "ganache-core": "^2.13.1-beta.1",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.4"
   }

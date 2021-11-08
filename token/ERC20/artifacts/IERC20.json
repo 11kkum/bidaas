@@ -51,8 +51,8 @@
 			"approve(address,uint256)": "095ea7b3",
 			"balanceOf(address)": "70a08231",
 			"totalSupply()": "18160ddd",
-			"transfer(address,uint256,string)": "56b8c724",
-			"transferFrom(address,address,uint256,string)": "1af716ba"
+			"transfer(address,uint256,string,string)": "e9c02815",
+			"transferFrom(address,address,uint256,string,string)": "e52c349d"
 		}
 	},
 	"abi": [
@@ -105,7 +105,13 @@
 				{
 					"indexed": false,
 					"internalType": "string",
-					"name": "comment",
+					"name": "messageHash",
+					"type": "string"
+				},
+				{
+					"indexed": false,
+					"internalType": "string",
+					"name": "sugnature",
 					"type": "string"
 				}
 			],
@@ -231,7 +237,12 @@
 				},
 				{
 					"internalType": "string",
-					"name": "comment",
+					"name": "messageHash",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "signature",
 					"type": "string"
 				}
 			],
@@ -265,7 +276,12 @@
 				},
 				{
 					"internalType": "string",
-					"name": "comment",
+					"name": "messageHash",
+					"type": "string"
+				},
+				{
+					"internalType": "string",
+					"name": "signature",
 					"type": "string"
 				}
 			],

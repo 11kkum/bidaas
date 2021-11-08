@@ -3,7 +3,7 @@ const privateKeyToPublicKey = require("ethereum-private-key-to-public-key");
 const publicKeyToAddress = require("ethereum-public-key-to-address");
 require("dotenv").config();
 
-const privateKey = process.env.privateKey;
+const privateKey = "PRIVATE_KYE"
 
 console.log("private key");
 console.log(privateKey);

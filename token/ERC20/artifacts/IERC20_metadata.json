@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.0+commit.c7dfd78e"
+		"version": "0.8.1+commit.df193b15"
 	},
 	"language": "Solidity",
 	"output": {
@@ -54,7 +54,13 @@
 					{
 						"indexed": false,
 						"internalType": "string",
-						"name": "comment",
+						"name": "messageHash",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "sugnature",
 						"type": "string"
 					}
 				],
@@ -180,7 +186,12 @@
 					},
 					{
 						"internalType": "string",
-						"name": "comment",
+						"name": "messageHash",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "signature",
 						"type": "string"
 					}
 				],
@@ -214,7 +225,12 @@
 					},
 					{
 						"internalType": "string",
-						"name": "comment",
+						"name": "messageHash",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "signature",
 						"type": "string"
 					}
 				],
@@ -236,7 +252,7 @@
 				"Approval(address,address,uint256)": {
 					"details": "Emitted when the allowance of a `spender` for an `owner` is set by a call to {approve}. `value` is the new allowance."
 				},
-				"Transfer(address,address,uint256,string)": {
+				"Transfer(address,address,uint256,string,string)": {
 					"details": "Emitted when `value` tokens are moved from one account (`from`) to another (`to`). Note that `value` may be zero."
 				}
 			},
@@ -254,10 +270,10 @@
 				"totalSupply()": {
 					"details": "Returns the amount of tokens in existence."
 				},
-				"transfer(address,uint256,string)": {
+				"transfer(address,uint256,string,string)": {
 					"details": "Moves `amount` tokens from the caller's account to `recipient`. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event."
 				},
-				"transferFrom(address,address,uint256,string)": {
+				"transferFrom(address,address,uint256,string,string)": {
 					"details": "Moves `amount` tokens from `sender` to `recipient` using the allowance mechanism. `amount` is then deducted from the caller's allowance. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event."
 				}
 			},
@@ -271,7 +287,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/token/ERC20/IERC20.sol": "IERC20"
+			"token/ERC20/IERC20.sol": "IERC20"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -285,12 +301,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/token/ERC20/IERC20.sol": {
-			"keccak256": "0x6ab4bb914dd53ea417b4f79e25e1cf74527c18b5fd5574cfc95e2c56818d4a09",
+		"token/ERC20/IERC20.sol": {
+			"keccak256": "0x85c2dac51ef892a7be1e87269b932810cbf34d4f6fa60993895c56e7e22a7b75",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1e3bd136825d25d4efa78c88c16043856141a2a0611747c507c01cc51c76bdba",
-				"dweb:/ipfs/QmV8jVhpQzTq1Ac77pU38itapV9UisZU44qPVHJfRJsz5n"
+				"bzz-raw://f219cf4b1e050b29ed1251036ffd531d3c65e61f4d7b09b7ca7a39571641b355",
+				"dweb:/ipfs/QmYQ6koNi2TduXBYcSauFo5yHeufmZxSWCFYQ2pU984akR"
 			]
 		}
 	},
