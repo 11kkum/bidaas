@@ -117,10 +117,9 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
     function transfer(
         address recipient,
         uint256 amount,
-        string memory messageHash,
-        string memory signature
+        string memory hashPass
     ) public virtual override returns (bool) {
-        _transfer(_msgSender(), recipient, amount, messageHash, signature);
+        _transfer(_msgSender(), recipient, amount, hashPass);
         return true;
     }
 
@@ -171,10 +170,9 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
         address sender,
         address recipient,
         uint256 amount,
-        string memory messageHash,
-        string memory signature
+        string memory hashPass
     ) public virtual override returns (bool) {
-        _transfer(sender, recipient, amount, messageHash, signature);
+        _transfer(sender, recipient, amount, hashPass);
 
         uint256 currentAllowance = _allowances[sender][_msgSender()];
         require(
@@ -258,8 +256,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
         address sender,
         address recipient,
         uint256 amount,
-        string memory messageHash,
-        string memory signature
+        string memory hashPass
     ) internal virtual {
         require(sender != address(0), "ERC20: transfer from the zero address");
         require(recipient != address(0), "ERC20: transfer to the zero address");
@@ -274,7 +271,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
         _balances[sender] = senderBalance - amount;
         _balances[recipient] += amount;
 
-        emit Transfer(sender, recipient, amount, messageHash, signature);
+        emit Transfer(sender, recipient, amount, hashPass);
     }
 
     /** @dev Creates `amount` tokens and assigns them to `account`, increasing

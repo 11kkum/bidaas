@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.1+commit.df193b15"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
@@ -98,6 +98,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "hashPass",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "pass",
 				"outputs": [
 					{
@@ -174,7 +187,7 @@
 		"compilationTarget": {
 			"contracts/MyTokenICO.sol": "MyTokenICO"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -187,11 +200,11 @@
 	},
 	"sources": {
 		"contracts/MyTokenICO.sol": {
-			"keccak256": "0x743996164ab11cb819760672851c0181ab2192f06c156fa73ae8a0ad8284d7bf",
+			"keccak256": "0xf444c8361fcf3bd70c57a83495686721f99c5254f269451fd02020a8cb592f93",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://4ac42187eec942881bb14698462b3d31d7bd929f84ffeb3accfd845af378f1ea",
-				"dweb:/ipfs/QmaCUZ6Em1KQEJ6SCze1mJA1zT68YVpdJR2RmCaWDpHDtj"
+				"bzz-raw://57fa1b618e0713700c1e6c7a0d20471f1baaef43a2d7f0381c439eb6927a4f3a",
+				"dweb:/ipfs/QmV2viKfhrSHg3jn8aeucZz4v4Gsq94haMNDYPiTW3So9Q"
 			]
 		},
 		"security/ReentrancyGuard.sol": {
@@ -203,11 +216,11 @@
 			]
 		},
 		"token/ERC20/IERC20.sol": {
-			"keccak256": "0x6ab4bb914dd53ea417b4f79e25e1cf74527c18b5fd5574cfc95e2c56818d4a09",
+			"keccak256": "0xc9d683d3642564f4d050f1ca1ed16b1405525f933baf35c16e5ddab44388e632",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://1e3bd136825d25d4efa78c88c16043856141a2a0611747c507c01cc51c76bdba",
-				"dweb:/ipfs/QmV8jVhpQzTq1Ac77pU38itapV9UisZU44qPVHJfRJsz5n"
+				"bzz-raw://a369a4c9826b0fcdb05875c2fc90884a44ae77bd8220a2fff14b4854fcaf65d9",
+				"dweb:/ipfs/QmfPxCkr6WCLf4MREFYZEGEPDfD38aRpupxWJq6vrd6nhW"
 			]
 		},
 		"utils/math/SafeMath.sol": {

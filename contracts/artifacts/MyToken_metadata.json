@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.1+commit.df193b15"
+		"version": "0.8.7+commit.e28d00a7"
 	},
 	"language": "Solidity",
 	"output": {
@@ -59,13 +59,7 @@
 					{
 						"indexed": false,
 						"internalType": "string",
-						"name": "messageHash",
-						"type": "string"
-					},
-					{
-						"indexed": false,
-						"internalType": "string",
-						"name": "sugnature",
+						"name": "hashPass",
 						"type": "string"
 					}
 				],
@@ -348,12 +342,7 @@
 					},
 					{
 						"internalType": "string",
-						"name": "messageHash",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "signature",
+						"name": "hashPass",
 						"type": "string"
 					}
 				],
@@ -387,12 +376,7 @@
 					},
 					{
 						"internalType": "string",
-						"name": "messageHash",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "signature",
+						"name": "hashPass",
 						"type": "string"
 					}
 				],
@@ -438,10 +422,10 @@
 				"totalSupply()": {
 					"details": "See {IERC20-totalSupply}."
 				},
-				"transfer(address,uint256,string,string)": {
+				"transfer(address,uint256,string)": {
 					"details": "See {IERC20-transfer}. Requirements: - `recipient` cannot be the zero address. - the caller must have a balance of at least `amount`."
 				},
-				"transferFrom(address,address,uint256,string,string)": {
+				"transferFrom(address,address,uint256,string)": {
 					"details": "See {IERC20-transferFrom}. Emits an {Approval} event indicating the updated allowance. This is not required by the EIP. See the note at the beginning of {ERC20}. Requirements: - `sender` and `recipient` cannot be the zero address. - `sender` must have a balance of at least `amount`. - the caller must have allowance for ``sender``'s tokens of at least `amount`."
 				}
 			},
@@ -457,7 +441,7 @@
 		"compilationTarget": {
 			"contracts/MyToken.sol": "MyToken"
 		},
-		"evmVersion": "istanbul",
+		"evmVersion": "london",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -478,19 +462,19 @@
 			]
 		},
 		"token/ERC20/ERC20.sol": {
-			"keccak256": "0x2d62c83655bd1710fd3b0250f653f1f407a489c1f2fb075f1f5774101667b67f",
+			"keccak256": "0x8060db3a0434abe0a39b1b7b36777529674f90ae6d5c1820701390e32a9cdcb5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://e684b01669b172aa74ef1090ae1bdbe3a78f9463dafcb5ef25a46cffdf3c5a65",
-				"dweb:/ipfs/QmNy9DqrHURQWXWjiaGNfsFtDk9ssVcEgzWUYZpQ9AWMtn"
+				"bzz-raw://81aa6fc5af8f5cf6dad6852395eb1e7c94967feb44cbc67f35cef67f44bca2f0",
+				"dweb:/ipfs/QmbknFF3ZPeX8EtEPDwmZik8Mo4hgdviiscFWs69KhTkCG"
 			]
 		},
 		"token/ERC20/IERC20.sol": {
-			"keccak256": "0x85c2dac51ef892a7be1e87269b932810cbf34d4f6fa60993895c56e7e22a7b75",
+			"keccak256": "0xc9d683d3642564f4d050f1ca1ed16b1405525f933baf35c16e5ddab44388e632",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f219cf4b1e050b29ed1251036ffd531d3c65e61f4d7b09b7ca7a39571641b355",
-				"dweb:/ipfs/QmYQ6koNi2TduXBYcSauFo5yHeufmZxSWCFYQ2pU984akR"
+				"bzz-raw://a369a4c9826b0fcdb05875c2fc90884a44ae77bd8220a2fff14b4854fcaf65d9",
+				"dweb:/ipfs/QmfPxCkr6WCLf4MREFYZEGEPDfD38aRpupxWJq6vrd6nhW"
 			]
 		},
 		"token/ERC20/extensions/IERC20Metadata.sol": {

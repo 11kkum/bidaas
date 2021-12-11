@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "retrieve",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "msg_in",
+						"type": "string"
+					}
+				],
+				"name": "store",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/temp_messafge.sol": "Message"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/temp_messafge.sol": {
+			"keccak256": "0x17da2d0a69cdaa0445d042f4bdaca3fb5dee495ba4e6e5009635aa90f0cbf4eb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0868c07998b1f8ac2aab4dd9f588335728ab6bccaaa0e4779f0fdba276d71aa9",
+				"dweb:/ipfs/QmemkPWUw4jiB5GxQZv8PvStFAM9gLvzGj5dZxxrJ9StkU"
+			]
+		}
+	},
+	"version": 1
+}

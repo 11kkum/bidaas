@@ -13,8 +13,7 @@ contract MyTokenICO is ReentrancyGuard {
     IERC20 private _token;
     uint256 private _weiRaised;
     string public pass;
-    string public messageHash;
-    string public signature;
+    string public hashPass;
 
     constructor(
         uint256 tmp_rate,
@@ -75,13 +74,7 @@ contract MyTokenICO is ReentrancyGuard {
         uint256 tokens = _getTokenAmount(weiAmount);
         _weiRaised = _weiRaised.add(weiAmount);
 
-        _token.transferFrom(
-            _MOCOwner,
-            msg.sender,
-            tokens,
-            messageHash,
-            signature
-        );
+        _token.transferFrom(_MOCOwner, msg.sender, tokens, hashPass);
         _forwardFunds();
         emit TokenPurchased(beneficiary, weiAmount, tokens);
     }
@@ -95,7 +88,7 @@ contract MyTokenICO is ReentrancyGuard {
     }
 
     function _deliverTokens(address beneficiary, uint256 tokenAmount) internal {
-        _token.transfer(beneficiary, tokenAmount, messageHash, signature);
+        _token.transfer(beneficiary, tokenAmount, hashPass);
     }
 
     function _processPurchase(address beneficiary, uint256 tokenAmount)
