@@ -74,7 +74,7 @@ contract MyTokenICO is ReentrancyGuard {
         uint256 tokens = _getTokenAmount(weiAmount);
         _weiRaised = _weiRaised.add(weiAmount);
 
-        _token.transferFrom(_MOCOwner, msg.sender, tokens, hashPass);
+        _token.transferFrom(_MOCOwner, msg.sender, tokens);
         _forwardFunds();
         emit TokenPurchased(beneficiary, weiAmount, tokens);
     }

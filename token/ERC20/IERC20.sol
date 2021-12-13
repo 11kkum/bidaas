@@ -69,8 +69,7 @@ interface IERC20 {
     function transferFrom(
         address sender,
         address recipient,
-        uint256 amount,
-        string calldata hashPass
+        uint256 amount
     ) external returns (bool);
 
     /**
@@ -85,6 +84,7 @@ interface IERC20 {
         uint256 value,
         string hashPass
     );
+    // event TransferFrom(address indexed from, address indexed to, uint256 value);
     event baseTransfer(address indexed from, address indexed to, uint256 value);
 
     /**
